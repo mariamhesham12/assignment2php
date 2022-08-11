@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.fullpage{
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(rgba(6, 6, 6, 0.737),rgba(0, 0, 0, 0.468)),url(../space-universe-moon-planet-stars-mountains-sky-night-sky-hd.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.formbox{
+  width: 350px;
+  height: 450px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 2% auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+#data1{
+    padding-top: 50px;
+}
+.data{
+    margin-bottom: 13px;
+}
+form input{
+    padding: 10px 50px;
+    background-color: transparent ;
+}
+form .btn{
+    border-top: 2px solid  rgba(135, 132, 123, 0.272) ;
+    border-left: 2px solid rgba(135, 132, 123, 0.272) ;
+    border-right: 2px solid  rgba(135, 132, 123, 0.824);
+    border-bottom: 2px solid rgba(135, 132, 123, 0.824);
+    color: rgba(149, 132, 89, 0.532);
+    font-family: 'Tangerine', cursive;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+form ::placeholder{
+    color: rgba(149, 132, 89, 0.532);
+    font-family: 'Tangerine', cursive;
+    font-size: 25px;
+    
+}
+
+@media screen and (max-width:900px){
+    body{
+        display: grid;
+    }
+}
+@media screen and (max-width:400px){
+    
+     .formbox{
+       width: 280px;
+       height: 500px;
+       margin-top: 50px;
+       
+    }
+    
+    .fullpage{
+        position: fixed;
+    }
+    form input{
+        padding: 10px 30px;}
+}
